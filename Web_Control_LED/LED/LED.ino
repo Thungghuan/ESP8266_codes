@@ -2,8 +2,8 @@
 #include <ESP8266WebServer.h>
 
 #ifndef STASSID
-#define STASSID "20304"
-#define STAPSK "20001130"
+#define STASSID "ssid"
+#define STAPSK "password"
 #endif
 
 const char* ssid = STASSID;
