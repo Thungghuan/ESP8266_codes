@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        body{
+            margin: auto 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            margin: 20px;
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+    <title>Control the LED_BUILTIN</title>
 </head>
 <body>
-    <p><button>开/关</button></p>
-    <p><button>闪烁</button></p>
-    <p><button>呼吸</button></p>
+    <form action="/LEDChange" method="POST">
+        <button>开</button>
+    </form>
+    <form action="/LEDblink" method="POST">
+        <button>闪烁</button>
+    </form>
+    <form action="/LEDbreathe" method="POST">
+        <button>呼吸</button>
+    </form>
+    <form action="/LEDStop" method="POST">
+        <button>关</button>
+    </form>
 </body>
 </html>
